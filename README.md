@@ -1,13 +1,32 @@
-# YT-Dowloader
-Youtube-Playlist-Downloader
+# YT-Downloader
 
-I make a quick and simple version of yt-dlp so you don't have to type the entire code into yt-dlp and remember the code.
+I made a quick and simple version of `yt-dlp` so you don't have to type out or remember complex terminal commands every time you want to download something.
 
-HOW TO USE First step is to make sure you are running Windows. Specifically, 10 or 11, and you don't need to install anything, the zip file has everything. Next, you have to extract the zip and go into the folder, and in that folder, you go to dist, then run the EXE
-Then you paste the YouTube video URL or playlist URL and name the folder/playlist, and the metadata of the file is changed to that name, so it works with MP3 players. When you do that, you can change the track name for individual songs or leave it blank for the YouTube video name. You can also change the artist, or it does the same thing as not naming it, but with the YouTube user who posted it. Once you do that, you can change the format to a video or audio, and if you want a video to work on a cheap MP3 player. You can change it to the AMV file type, and it will take longer to do because it has to change the format from MP4 to AMV and change the framerate of the video to 16 fps. After it's done, it will put it in your videos or music based on what format you choose.
+---
 
-Go check out the original project here https://github.com/yt-dlp/yt-dlp
+##  How to Use (Windows 10 / 11)
 
-For Linux
-you need to install ffmpeg by using this command
-sudo apt update && sudo apt install ffmpeg
+You don't need to install anything. The `.zip` file comes bundled with everything you need.
+
+1. **Download and Extract:** Download the project `.zip` file and extract it completely.
+2. **Launch:** Open the extracted folder, navigate into the `Windows` folder, and run the executable.
+3. **Download:** Paste your YouTube video or playlist URL.
+4. **Name Your Tracks:** Name the folder or playlist. The app automatically updates the metadata tags so your files look great and work perfectly on MP3 players!
+   * **Track Names:** You can manually change individual track names or leave it blank to automatically use the YouTube video title.
+   * **Artist Name:** Change the artist manually, or leave it blank to automatically use the name of the YouTube channel that uploaded it.
+5. **Choose Your Format:** Select whether you want standard video or audio.
+6. **AMV Support for Portable Players:** If you want a video to work on a cheap or legacy MP3 player, select the **AMV** file type. *Note: This process takes a bit longer because it converts the video container and downsamples the framerate to a smooth 16 fps.*
+
+Once the download is complete, your files will be neatly organized inside your system's default **Videos** or **Music** folders based on the format you picked!
+
+---
+
+##  Running on Linux
+
+To use the Linux build, you must have `ffmpeg` installed on your system to handle file merging and conversions. 
+
+Open your terminal and run the appropriate command for your distribution:
+
+* **Ubuntu / Debian / Mint / Pop!_OS:**
+  ```bash
+  sudo apt update && sudo apt install ffmpeg
